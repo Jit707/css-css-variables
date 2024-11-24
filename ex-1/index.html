@@ -6,10 +6,49 @@
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hack Hours CSS Variables - Ex 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            
+            colors: {
+              branding: '#ffc0d1',
+              secondary: '#ff336b',
+              hilight: '#df153a',
+              muted: '#6d0014',
+
+            },
+            margin: {
+              level1: '1px',
+              level2: '5px',
+              level3: '10px',
+              level4: '15px',
+              level5: '100px',
+            },
+            padding: {
+              level1: '1px',
+              level2: '5px',
+              level3: '10px',
+              level4: '15px',
+              level5: '100px',
+            },
+            fontSize: {
+              small: '12px',
+              medium: '16px',
+              large: '20px',
+              extraLarge: '30px',
+              doubleExtraLarge: 'xl',
+              tripleExtraLarge: '100px',
+            },
+          }
+        }
+      }
+    </script>
   </head>
   <body>
-    <div class="introduction">
-      <h1>CSS Variable</h1>
+    <div class="bg-secondary p-level5 ">
+      <h1 class="text-branding text-tripleExtraLarge">CSS Variable</h1>
       <h2>It's cool 🌟</h2>
     </div>
   </body>
